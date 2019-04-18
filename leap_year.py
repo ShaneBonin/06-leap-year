@@ -5,4 +5,11 @@
 # Don't forget to reach out for help after your own due diligence
 
 def is_leap_year(year):
-    return ''
+   leap = False
+   if (year % 100 == 0) and (year % 400 != 0):
+       leap = False
+   elif  year % 4 == 0:
+       leap = True
+   else:
+       leap = False
+   return leap
